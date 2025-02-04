@@ -103,7 +103,7 @@ h3{
 .cards{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(400px));
     gap: 15px;
     padding: 50px;
 }
