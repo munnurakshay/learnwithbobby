@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Poppins;
+}
+/* Navbar */
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #f0f8ff;
+}
+nav{
+    width: 100%;
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-family: Poppins;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 8px;
+}
+nav ul li a:hover{
+    background-color: #5f17eb;
+    color: white;
+    transition: .5;
+}
+.menu{
+    font-size: 30px;
+    color: #5f17eb;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+button{
+    background-color: #5f17eb;
+    font-family: Poppins;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+/* /Navbar */
+/* Container */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #5f17eb;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+/* End Bar */
+.endbar{
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    align-content: center;
+}
+.endbar p{
+    font-family: Poppins;
+    color: #5f17eb;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.box1{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,#5f17eb,#740182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    }
+    
+    .login{
+        margin: auto;
+        background-color: white;
+        width: 500px;
+        height: 500px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    h3{
+        font-family: Poppins;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .inputfield{
+        font-family: Poppins;
+        font-size: 16px;
+        height: 60px;
+        width: 300px;
+        margin-bottom: 12px;
+    }
+    .inputfield>input{
+        border: none;
+        margin-left: 8px;
+        width: 280px;
+        height: 20px;
+        outline: none;
+    }
+    .inputfield a{
+        color: #5f17eb;
+        font-size: 16px;
+        font-weight: 450;
+    }
+    .inputfield a:hover{
+        color: #740182;
+    }
+    
+    select{
+        border: none;
+        margin-left: 8px;
+        width: 280px;
+        height: 20px;
+        outline: none;
+    }
+    a{
+        font-family: Poppins ;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    fieldset{
+        border-color: #5f17eb;
+        border-radius: 8px;
+    }
+    
+    
+    legend{
+        margin-left: 8px;
+    }
+    .btn{
+        width: 300px;
+        height: 55px;
+        border-radius: 8px;
+        background: linear-gradient(to right,#5f17eb,#740182);
+        color: white;
+        font-family: Poppins;
+        font-weight: 400;
+        cursor: pointer;
+    }
+.links a:hover{
+    color: #740182;
+}
+.links a{
+    color: #5f17eb;
+    padding-left: 8px;
+    font-size: 18px;
+}
+/* Media Qwery of Navbar */
+@media (max-width: 952px) {
+    .logo{
+        padding-left: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .endbar{
+        padding: 20px;
+    }
+    .endbar p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px) {
+    .menu{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #f0f8ff;
+        top: 80px;
+        left: -100%;
+        transition:all.5s;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.menu{
+        background: none;
+        color: #f0f8ff;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/* /Media Qwery of Navbar */
+  
